@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;1,400&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlists 1st year</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   <header>
+    <h1>
+        <span>WELCOME</span>
+        <span>TO</span>
+        <span>IGDTUW</span>
+        <span>RESOURCE</span><br>
+        <span>EXPLORE</span>
+        <span>THE</span>
+        <span>PLAYLISTS</span>
+        <span>FOR</span>
+        <span>1st</span>
+        <span>YEAR</span><br><br>
+        <span># LEARN</span>
+        <span>AND</span>
+        <span>GROW</span>
+        
+      </h1>
+   </header>
+   <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Playlists.." title="Type in a name">
+
+   <table id="myTable">
+     <tr class="header">
+       <th >SUBJECTS/<br>BRANCH</th>
+       <th >1ST</th>
+       <th >2ND</th>
+       <th >3RD</th>
+       <th >4TH</th>
+   
+     </tr>
+     <tr>
+       <td>CSE & ECE</td>
+       <td><a href="https://www.instagram.com/p/CmzDyyqsw_b/?igshid=NjIwNzIyMDk2Mg==">Maths</a><br><br><a href=""></a></td>
+       <td><a href="https://www.instagram.com/p/Cl5QmWBPKwy/?igshid=NjIwNzIyMDk2Mg==">BEE</a><br><br><a href=""></a></td>
+       <td><a href="https://www.instagram.com/p/Cv_ja_jo3o1/?igshid=NjIwNzIyMDk2Mg==">Physics</a><br><br><a href=""></a></td>
+       <td><a href="https://www.instagram.com/reel/CmGg6nTKZNX/?igshid=NjIwNzIyMDk2Mg==">C</a><br><br><a href=""></a></td>
+          
+     </tr>
+     
+     <tr>
+       <td>CSE-AI & AI-ML</td>
+       <td><a href="https://www.instagram.com/p/CmzDyyqsw_b/?igshid=NjIwNzIyMDk2Mg==">Maths</a><br><br><a href=""></a></td>
+       <td><a href="https://www.instagram.com/p/Cv_ja_jo3o1/?igshid=NjIwNzIyMDk2Mg==">Physics</a><br><br><a href=""></a></td>
+       <td><a href="https://www.instagram.com/p/Cv6S-IEyxH2/?igshid=NjIwNzIyMDk2Mg==">COA</a><br><br><a href=""></a></td>
+       <td><a href="https://www.instagram.com/p/Cv823GtIQZV/?igshid=NjIwNzIyMDk2Mg==">Python</a><br><br><a href=""></a></td>
+     
+    </tr>
+     <tr>
+       <td>IT & MAE</td>
+       <td><a href="https://www.instagram.com/p/CmzDyyqsw_b/?igshid=NjIwNzIyMDk2Mg==">Maths</a><br><br><a href=""></a></td>
+       <td><a href="https://www.instagram.com/p/Cv_ja_jo3o1/?igshid=NjIwNzIyMDk2Mg==">Physics</a><br><br><a href=""></a></td>
+       <td><a href="https://www.instagram.com/p/Cl88sNLSTRz/?igshid=NjIwNzIyMDk2Mg==">EM</a><br><br><a href=""></a></td>
+       <td><a href=""></a><br><br><a href=""></a></td>
+     
+       
+     </tr>
+     <tr>
+       <td>ECE-AI</td>
+       <td><a href="https://www.instagram.com/p/CmzDyyqsw_b/?igshid=NjIwNzIyMDk2Mg==">Maths</a><br><br><a href=""></a></td>
+       <td><a href="/1xvfsulq82fCUEabdWGyGRJ9D6cqntbJW?usp=share_link">Analog Electronics</a><br><br><a href=""></a></td>
+       <td><a href="https://www.instagram.com/p/Cl5QmWBPKwy/?igshid=NjIwNzIyMDk2Mg==">BEE</a><br><br><a href=""></a></td>
+       <td><a href="https://www.instagram.com/reel/CmGg6nTKZNX/?igshid=NjIwNzIyMDk2Mg==">C</a><br><br><a href=""></a></td>
+     
+       
+    </tr>
+     
+     
+     
+   
+     
+   </table>
+    <br>
+    <script>
+        function myFunction() {
+          var input, filter, table, tr, td, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+              txtValue = td.textContent || td.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }       
+          }
+        }
+        </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
